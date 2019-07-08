@@ -39,8 +39,8 @@ all interview material related to front end
     return newStr;
 }
 var a = myprogram("this_is_a_variable");
-console.log(a);
+console.log(a);   // output thisIsAVariable
 var b = myprogram("thisIsAVariable");
-console.log(b)
+console.log(b)   // output this_is_a_variable
 ```
               
