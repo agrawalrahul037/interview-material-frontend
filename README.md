@@ -11,6 +11,8 @@ all interview material related to front end
    
    Solution->
    ----------
+   
+   ```javascript
    function myprogram(str) {
     var newStr = "";
     var underPosition = str.indexOf("_");
@@ -40,4 +42,5 @@ var a = myprogram("this_is_a_variable");
 console.log(a);
 var b = myprogram("thisIsAVariable");
 console.log(b)
+```
               
