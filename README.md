@@ -2,6 +2,23 @@
 all interview material related to front end
 
 # IMPORTANT PROGRAMS FOR INTERVIEW
+1- Palindrome Program
+
+```javascript
+function mypalindrom(str){
+var i = 0;
+var j = str.length-1;
+while(j>0){
+ if(str[i++] != str[j--]){
+   console.log("it is not palindrom");
+   return;
+ }
+}
+ console.log("it is palindrom");
+}
+mypalindrom("aabaa");
+
+```
 
 # Sapient Coding Test
 
