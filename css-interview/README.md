@@ -10,7 +10,7 @@
 
 ## Core React
 
-1. ### How's we will align a horizontal and vertical center div css?
+1. ### horizontal and vertical center div?
 
   ```javascript
 <!DOCTYPE html>
