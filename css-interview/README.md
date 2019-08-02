@@ -10,7 +10,7 @@
 
 ## Core React
 
-1. ### horizontal and vertical center div?
+1. ### Horizontal and Vertical center div?
 
   ```javascript
 <!DOCTYPE html>
