@@ -23,7 +23,7 @@ var myObject = {
         console.log("outer func:  this.foo = " + this.foo);
         console.log("outer func:  self.foo = " + self.foo);
         (function() {
-            console.log("inner func:  this.foo = " + this.foo);\\ this will be represent to myObject. Because this refer to only one level
+            console.log("inner func:  this.foo = " + this.foo); //this will be represent to myObject. Because this refer to only one level
             console.log("inner func:  self.foo = " + self.foo);
         }());
     }
