@@ -1,3 +1,35 @@
+# Javascript Interview Questions
+
+### Table of Contents
+
+| No. | Questions |
+| --- | --------- |
+|   | **Javascript Interview** |
+|1  | [How's singleton design pattern work in javascript ?](#singleton-pattern-in-javascript) |
+
+
+1. ### singleton pattern in javascript?
+
+```javascript
+var SingletonFactory = (function(){
+    function SingletonClass() {
+        //do stuff
+    }
+    var instance;
+    return {
+        getInstance: function(){
+            if (instance == null) {
+                instance = new SingletonClass();
+                // Hide the constructor so the returned object can't be new'd...
+                instance.constructor = null;
+            }
+            return instance;
+        }
+   };
+})();
+var test = SingletonFactory.getInstance();
+```
+
 # Javascript practice tricky program collection from different sites
 https://www.toptal.com/javascript/interview-questions#note
 
