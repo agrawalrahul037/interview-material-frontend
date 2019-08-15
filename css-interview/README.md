@@ -39,7 +39,7 @@
    </body>
 </html>
   ```
-2- ### Grid classes in bootstrap 4
+2. ### Grid classes in bootstrap 4   <br>
 The Bootstrap 4 grid system has five classes:
   ```javascript
 .col- (extra small devices - screen width less than 576px)
