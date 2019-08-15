@@ -6,6 +6,7 @@
 | --- | --------- |
 |   | **CSS Interview** |
 |1  | [How's we will align a horizontal and vertical center div css ?](#horizontal-and-vertical-center-div) |
+|2  | [Grid classes in bootstrap 4 ?](#Grid-classes-in-bootstrap-4) |
 
 
 ## Core React
@@ -38,3 +39,13 @@
    </body>
 </html>
   ```
+2- ### Grid classes in bootstrap 4
+The Bootstrap 4 grid system has five classes:
+  ```javascript
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+```
+The classes above can be combined to create more dynamic and flexible layouts.
