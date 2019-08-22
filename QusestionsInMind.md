@@ -5,7 +5,7 @@
 | No. | Questions |
 | --- | --------- |
 |   | **Daily Questions Comes in mind** |
-|1  | [dev dependencies vs peer dependencies vs dependencies ?](#dev dependencies vs peer dependencies vs dependencies) |
+|1  | [dev dependencies vs peer dependencies vs dependencies ?](#dev-dependencies-vs-peer-dependencies-vs-dependencies) |
 |2  | [dev dependencies vs peer dependencies vs dependencies ?]
 |3  | [dev dependencies vs peer dependencies vs dependencies ?]
 |4  | [dev dependencies vs peer dependencies vs dependencies ?]
@@ -29,4 +29,6 @@
 |22  | [dev dependencies vs peer dependencies vs dependencies ?]
 |23  | [dev dependencies vs peer dependencies vs dependencies ?]
 |24  | [dev dependencies vs peer dependencies vs dependencies ?]
+
+1. ### dev dependencies vs peer dependencies vs dependencies?
 
