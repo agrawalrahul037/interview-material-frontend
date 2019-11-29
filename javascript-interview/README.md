@@ -7,6 +7,7 @@
 |   | **Javascript Interview** |
 |1  | [How's singleton design pattern work in javascript ?](#singleton-pattern-in-javascript) |
 |2  | [Call/Apply/Bind/Curring Example ?](#call-apply-bind-curring) |
+|3  | [functional javascript in different way ?](#functional-javascript-in-different-way) |
 
 1. ### singleton pattern in javascript?
 
@@ -69,6 +70,69 @@ var test = SingletonFactory.getInstance();
             };
         }
         console.log(multiply(2)(3));   // function curring example
+    </script>
+</body>
+
+</html>
+```
+3. ### functional javascript in different way?
+```javascript
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        // Normal way
+        // var arr = [1, 2, 3];
+        // var arr1 = [];
+        // for (var i = 0; i < arr.length; i++) {
+        //     // arr1.push(arr[i] * 2)
+        //     arr1.push(arr[i] > 2)
+        // }
+        //Using functional programming 
+        // var arr = [1, 2, 3];
+        // function makeFunc(arr,func) {
+        //     var newArr = [];
+        //     for (var i = 0; i < arr.length; i++) {
+        //         newArr.push(func(arr[i]))
+        //     }
+        //     return newArr;
+        // }
+        // var arr1 = makeFunc(arr, function (item) {
+        //     return item * 2;
+        // })
+        //Using Complex functional programming
+        // var arr = [1, 2, 3];
+        // function makeFunc(arr, func) {
+        //     var newArr = [];
+        //     for (var i = 0; i < arr.length; i++) {
+        //         newArr.push(func(arr[i]))
+        //     }
+        //     return newArr;
+        // }
+        // var checkerMulti = function (multiplier, item) {
+        //     return item * multiplier;
+        // }
+        // var arr1 = makeFunc(arr, checkerMulti.bind(this, 2)) // [2,4,6]
+        // var arr1 = makeFunc(arr, checkerMulti.bind(this, 2, 3)) // [6,6,6]
+
+        //Using More Complex functional programming
+        // var arr = [1, 2, 3];
+        // function makeFunc(arr, func) {
+        //     var newArr = [];
+        //     for (var i = 0; i < arr.length; i++) {
+        //         newArr.push(func(arr[i]))
+        //     }
+        //     return newArr;
+        // }
+        // var checkerMultiAdvance = function (multiply) {
+        //     return function (multiplier, item) {
+        //         return item * multiplier;
+        //     }.bind(this,multiply)
+        // }
+        // var arr1 = makeFunc(arr, checkerMultiAdvance(2)) // [2,4,6]
+
+        // console.log(arr1);
     </script>
 </body>
 
