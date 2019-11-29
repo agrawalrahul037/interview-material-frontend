@@ -6,7 +6,7 @@
 | --- | --------- |
 |   | **Javascript Interview** |
 |1  | [How's singleton design pattern work in javascript ?](#singleton-pattern-in-javascript) |
-
+|2  | [Call/Apply/Bind/Curring Example ?](#call-apply-bind-curring) |
 
 1. ### singleton pattern in javascript?
 
@@ -29,7 +29,51 @@ var SingletonFactory = (function(){
 })();
 var test = SingletonFactory.getInstance();
 ```
+2. ### call apply bind curring?
 
+```javascript
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var person = {
+            firstname: "Rahul",
+            lastname: "Agrawal",
+            getFullName: function () {
+                var fullname = this.firstname + ' ' + this.lastname
+                return fullname;
+            }
+        }
+        var collectInfo = function (lang1, lang2) {
+            console.log("full name===========" + this.getFullName());
+            console.log("lang1=================" + lang1);
+            console.log("lang2=================" + lang2)
+        }
+        var myInfo = collectInfo.bind(person);  //After using bind method [Inside collectInfo function this will refer to person Object]
+        // myInfo();
+        // myInfo.call();    // we can call any function using call method also
+        //collectInfo.call(person, "en","es");  // we pass parameters as a comma seperated
+        //collectInfo.apply(person, ["en", "es"]);  // we pass parameters as a array
+
+        // function multiply(a,b){
+        //     return a*b;
+        // }
+        //var multiplyByTwo = multiply.bind(this,2) // second parameter is permanent value which will used in multiply function as a first parameter
+        //console.log(multiplyByTwo(3)); // 6
+        //var multiplyByTwo = multiply.bind(this,2,4) // second and third parameter are permanent value which will used in multiply function as a first and second parameter
+        //console.log(multiplyByTwo(3)); // 8  output will be 8 because of default value weither we pass anything
+        function multiply(a) {
+            return function (b) {
+                return a * b;
+            };
+        }
+        console.log(multiply(2)(3));   // function curring example
+    </script>
+</body>
+
+</html>
+```
 # Javascript practice tricky program collection from different sites
 https://www.toptal.com/javascript/interview-questions#note
 
