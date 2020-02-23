@@ -30,6 +30,7 @@
 |23  | [When to take const and when to take function while making any action ?]
 |24  | [Inside node modules you will see that some modules install with @ symbol? Why is that ?]
 |25  | [How to make visual studio code snippets(how to make snippet development) ?]
+|26  | [Why to use "use strict" in detail) ?]
 
 1. ### dev dependencies vs peer dependencies vs dependencies?
 
