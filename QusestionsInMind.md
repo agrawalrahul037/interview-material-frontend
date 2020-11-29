@@ -32,6 +32,7 @@
 |25  | [How to make visual studio code snippets(how to make snippet development) ?]
 |26  | [Why to use "use strict" in detail) ?]
 |27  | [JavaScript Bitwise Operators in detail) ?]
+|28  | [JavaScript is an Interpreted language which means that you don’t require a compiler to run JavaScript ?]
 
 1. ### dev dependencies vs peer dependencies vs dependencies?
 
