@@ -1,6 +1,21 @@
 # interview-material-frontend
 all interview material related to front end
 
+# Remove duplicate object from array in javascript
+```javascript
+var data = [{id: 1}, {id: 12}, {id: 41},{id: 90},{id: 6}, 
+            {id: 87}, {id: 12}]
+var teampArray = data.map(ob=> ob.id);
+var arrayChecker = []
+var finalArray = [];
+for(var i=0;i< teampArray.length;i++){
+  if(arrayChecker.indexOf(teampArray[i])<0){
+    arrayChecker.push(teampArray[i])
+    finalArray.push({id:teampArray[i]})
+  }
+}
+console.log(finalArray)
+```
 # IMPORTANT PROGRAMS FOR INTERVIEW
 1- Palindrome Program
 
