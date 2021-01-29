@@ -1,6 +1,38 @@
 # interview-material-frontend
 all interview material related to front end
-
+# count duplicate values in string in javascript
+1- first way
+```javascript
+var s = 'tothenew';
+var sArray = s.split('');
+var tempArray = [];
+var finalOb = {};
+for(var i=0;i<sArray.length;i++){
+  if(tempArray.indexOf(sArray[i])<0){
+    tempArray.push(sArray[i]);
+    finalOb[sArray[i]] = 1;
+  }
+  else{
+    finalOb[sArray[i]] += 1;
+  }
+}
+console.log(finalOb)
+```
+2- second way
+```javascript
+var s = 'tothenew';
+var sArray = s.split('');
+var finalOb = {};
+for(var i=0;i<sArray.length;i++){
+  if(!finalOb[sArray[i]]){
+    finalOb[sArray[i]] = 1;
+  }
+  else{
+    finalOb[sArray[i]] += 1;
+  }
+}
+console.log(finalOb)
+```
 # Remove duplicate object from array in javascript
 ```javascript
 var data = [{id: 1}, {id: 12}, {id: 41},{id: 90},{id: 6}, 
